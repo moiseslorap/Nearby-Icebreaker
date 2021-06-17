@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		625654E0267AEBF80099AAF1 /* NearViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625654DF267AEBF80099AAF1 /* NearViewModel.swift */; };
+		625654ED267BFB3E0099AAF1 /* Nearby.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625654EC267BFB3E0099AAF1 /* Nearby.storyboard */; };
 		C986ADD726605604007ECB32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C986ADD626605603007ECB32 /* AppDelegate.swift */; };
-		C986ADD926605604007ECB32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C986ADD826605604007ECB32 /* SceneDelegate.swift */; };
 		C986ADDB26605604007ECB32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C986ADDA26605604007ECB32 /* ViewController.swift */; };
 		C986ADDE26605604007ECB32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C986ADDC26605604007ECB32 /* Main.storyboard */; };
 		C986ADE026605642007ECB32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C986ADDF26605642007ECB32 /* Assets.xcassets */; };
@@ -18,9 +18,11 @@
 
 /* Begin PBXFileReference section */
 		625654DF267AEBF80099AAF1 /* NearViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearViewModel.swift; sourceTree = "<group>"; };
+		625654EA267BD9CD0099AAF1 /* NearbyInteraction.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NearbyInteraction.framework; path = System/Library/Frameworks/NearbyInteraction.framework; sourceTree = SDKROOT; };
+		625654EB267BD9D10099AAF1 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		625654EC267BFB3E0099AAF1 /* Nearby.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Nearby.storyboard; sourceTree = "<group>"; };
 		C986ADD326605603007ECB32 /* Nearby-Icebreaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nearby-Icebreaker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C986ADD626605603007ECB32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C986ADD826605604007ECB32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C986ADDA26605604007ECB32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C986ADDD26605604007ECB32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C986ADDF26605642007ECB32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +49,22 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		625654E5267BCC000099AAF1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		625654E9267BD8F00099AAF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				625654EB267BD9D10099AAF1 /* MultipeerConnectivity.framework */,
+				625654EA267BD9CD0099AAF1 /* NearbyInteraction.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		C986ADCA26605601007ECB32 = {
 			isa = PBXGroup;
 			children = (
@@ -66,14 +84,16 @@
 		C986ADD526605603007ECB32 /* Nearby-Icebreaker */ = {
 			isa = PBXGroup;
 			children = (
+				625654E9267BD8F00099AAF1 /* Frameworks */,
+				625654E5267BCC000099AAF1 /* ViewControllers */,
 				625654DE267AEBDF0099AAF1 /* ViewModels */,
 				C986ADD626605603007ECB32 /* AppDelegate.swift */,
-				C986ADD826605604007ECB32 /* SceneDelegate.swift */,
 				C986ADDA26605604007ECB32 /* ViewController.swift */,
 				C986ADDC26605604007ECB32 /* Main.storyboard */,
 				C986ADDF26605642007ECB32 /* Assets.xcassets */,
 				C986ADE126605642007ECB32 /* LaunchScreen.storyboard */,
 				C986ADE426605642007ECB32 /* Info.plist */,
+				625654EC267BFB3E0099AAF1 /* Nearby.storyboard */,
 			);
 			path = "Nearby-Icebreaker";
 			sourceTree = "<group>";
@@ -136,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C986ADE326605642007ECB32 /* LaunchScreen.storyboard in Resources */,
+				625654ED267BFB3E0099AAF1 /* Nearby.storyboard in Resources */,
 				C986ADE026605642007ECB32 /* Assets.xcassets in Resources */,
 				C986ADDE26605604007ECB32 /* Main.storyboard in Resources */,
 			);
@@ -151,7 +172,6 @@
 				625654E0267AEBF80099AAF1 /* NearViewModel.swift in Sources */,
 				C986ADDB26605604007ECB32 /* ViewController.swift in Sources */,
 				C986ADD726605604007ECB32 /* AppDelegate.swift in Sources */,
-				C986ADD926605604007ECB32 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
