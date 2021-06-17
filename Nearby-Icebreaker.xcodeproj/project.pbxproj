@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		625654E0267AEBF80099AAF1 /* NearViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625654DF267AEBF80099AAF1 /* NearViewModel.swift */; };
 		C986ADD726605604007ECB32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C986ADD626605603007ECB32 /* AppDelegate.swift */; };
 		C986ADD926605604007ECB32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C986ADD826605604007ECB32 /* SceneDelegate.swift */; };
 		C986ADDB26605604007ECB32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C986ADDA26605604007ECB32 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		625654DF267AEBF80099AAF1 /* NearViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearViewModel.swift; sourceTree = "<group>"; };
 		C986ADD326605603007ECB32 /* Nearby-Icebreaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nearby-Icebreaker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C986ADD626605603007ECB32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C986ADD826605604007ECB32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		625654DE267AEBDF0099AAF1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				625654DF267AEBF80099AAF1 /* NearViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		C986ADCA26605601007ECB32 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		C986ADD526605603007ECB32 /* Nearby-Icebreaker */ = {
 			isa = PBXGroup;
 			children = (
+				625654DE267AEBDF0099AAF1 /* ViewModels */,
 				C986ADD626605603007ECB32 /* AppDelegate.swift */,
 				C986ADD826605604007ECB32 /* SceneDelegate.swift */,
 				C986ADDA26605604007ECB32 /* ViewController.swift */,
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				625654E0267AEBF80099AAF1 /* NearViewModel.swift in Sources */,
 				C986ADDB26605604007ECB32 /* ViewController.swift in Sources */,
 				C986ADD726605604007ECB32 /* AppDelegate.swift in Sources */,
 				C986ADD926605604007ECB32 /* SceneDelegate.swift in Sources */,
