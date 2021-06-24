@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import NearbyInteraction
 
 class ViewController: UIViewController {
 
@@ -16,7 +17,16 @@ class ViewController: UIViewController {
         activityIndicator.startAnimating()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if !NISession.isSupported {
+            let storyboard = UIStoryboard(name: "Unsupported", bundle: nil)
+            if let unsupportedView = storyboard.instantiateViewController(withIdentifier: "UnsupportedView") as? ViewController {
+            present(unsupportedView, animated: true, completion: nil)
+            }
+        }
+    }
 
 
 }
-

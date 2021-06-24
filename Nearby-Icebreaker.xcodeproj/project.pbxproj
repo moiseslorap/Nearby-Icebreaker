@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F7643A82685255D0053A00C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7643A72685255D0053A00C /* SceneDelegate.swift */; };
+		1F7643AA2685265B0053A00C /* Unsupported.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7643A92685265B0053A00C /* Unsupported.storyboard */; };
 		625654E0267AEBF80099AAF1 /* NearViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625654DF267AEBF80099AAF1 /* NearViewModel.swift */; };
 		625654ED267BFB3E0099AAF1 /* Nearby.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625654EC267BFB3E0099AAF1 /* Nearby.storyboard */; };
 		C986ADD726605604007ECB32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C986ADD626605603007ECB32 /* AppDelegate.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F7643A72685255D0053A00C /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1F7643A92685265B0053A00C /* Unsupported.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Unsupported.storyboard; sourceTree = "<group>"; };
 		625654DF267AEBF80099AAF1 /* NearViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearViewModel.swift; sourceTree = "<group>"; };
 		625654EA267BD9CD0099AAF1 /* NearbyInteraction.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NearbyInteraction.framework; path = System/Library/Frameworks/NearbyInteraction.framework; sourceTree = SDKROOT; };
 		625654EB267BD9D10099AAF1 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
@@ -84,6 +88,7 @@
 		C986ADD526605603007ECB32 /* Nearby-Icebreaker */ = {
 			isa = PBXGroup;
 			children = (
+				1F7643A72685255D0053A00C /* SceneDelegate.swift */,
 				625654E9267BD8F00099AAF1 /* Frameworks */,
 				625654E5267BCC000099AAF1 /* ViewControllers */,
 				625654DE267AEBDF0099AAF1 /* ViewModels */,
@@ -94,6 +99,7 @@
 				C986ADE126605642007ECB32 /* LaunchScreen.storyboard */,
 				C986ADE426605642007ECB32 /* Info.plist */,
 				625654EC267BFB3E0099AAF1 /* Nearby.storyboard */,
+				1F7643A92685265B0053A00C /* Unsupported.storyboard */,
 			);
 			path = "Nearby-Icebreaker";
 			sourceTree = "<group>";
@@ -158,6 +164,7 @@
 				C986ADE326605642007ECB32 /* LaunchScreen.storyboard in Resources */,
 				625654ED267BFB3E0099AAF1 /* Nearby.storyboard in Resources */,
 				C986ADE026605642007ECB32 /* Assets.xcassets in Resources */,
+				1F7643AA2685265B0053A00C /* Unsupported.storyboard in Resources */,
 				C986ADDE26605604007ECB32 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,6 +179,7 @@
 				625654E0267AEBF80099AAF1 /* NearViewModel.swift in Sources */,
 				C986ADDB26605604007ECB32 /* ViewController.swift in Sources */,
 				C986ADD726605604007ECB32 /* AppDelegate.swift in Sources */,
+				1F7643A82685255D0053A00C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
